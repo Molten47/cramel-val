@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="/37133-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body class="min-h-screen bg-[#FEE3DA]  text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-[#ED124A] z-50 justify-between">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-4">
+                <img class="h-12 w-auto" src="/37133-removebg-preview.png" alt="Logo">
+                <h1 class="text-xl md:text-2xl font-bold">Kenny's World</h1>
+            </div>
+
+            <!-- Dropdown Menu -->
+            <div class="dropdown relative">
+                <button class="dropbtn flex items-center space-x-2 px-4 py-2 hover:bg-slate-800 rounded-lg transition-colors">
+                    <span></span>
+                    <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content absolute right-0 mt-2 w-48 bg-[#FEE3DA] rounded-lg shadow-lg align-center">
+                    <button class="close-btn">✕</button>
+                    <a href="#" class="reasons-link block px-4 py-2 text-[#ED124A] hover:bg-slate-100 rounded-t-lg">Why I want you to be my Val</a>
+                    <a href="#" class="about-link block px-4 py-2 text-[#ED124A] hover:bg-slate-100">About Us</a>
+                </div>
+            </div>
+            
+            <div class="about-content">
+                <button class="close-btn">✕</button>
+                <h2>About Us</h2>
+                <p>We started of as strangers, we became friends, we later turned best of friends, and now we are Caramel and Favv</p>
+            </div>
+            
+            <div class="reasons-content">
+                <button class="close-btn">✕</button>
+                <h2>21 reasons why I love you.</h2>
+                <ul>
+                    <li>1. You are the smartest person  I know</li>
+                    <li>2. You are hardworking</li>
+                    <li>3. You are ambitious</li>
+                    <li>4. You are very compassionate</li>
+                    <li>5. You shine your light on others around you</li>
+                    <li>6. You share kindness and love to everyone you know</li>
+                    <li>7. You made me realise worrying is not a solution</li>
+                    <li>8. You look out for me when I am not looking out for myself</li>
+                    <li>9. You are passionate about making an impact and changing the world</li>
+                    <li>10. You live a good spiritual life</li>
+                    <li>11. You are dilligent</li>
+                    <li>12. You have the aura of a child of God</li>
+                    <li>13. You set your prioritied right and avoid distractions</li>
+                    <li>14. You are an open minded person</li>
+                    <li>15. You are kind</li>
+                    <li>16. You have been a good friend</li>
+                    <li>17. You have a zeal to change the world around you</li>
+                    <li>18. You want to be the best mental health nurse</li>
+                    <li>19. You are a prayer warrior</li>
+                    <li>20. You are not judgemental</li>
+                    <li>21. You like drama 😭😭😭😭😭😭😭</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-20">
+        <section class="custom-bg min-h-[60vh] flex flex-col items-center  justify-center px-4 text-center">
+            <h2 class="text-6xl md:text-8xl font-extrabold mb-6 text-[#ED124A]">Will You be my Valentine?</h2>
+            <p class="text-lg md:text-xl max-w-2xl mb-8 text-[#ED124A]">
+                My sweet caramel, I have had a billion times to think about this and I have come up with no other decision than this.
+            </p>
+            <button class="mid-btn bg-[#ED124A] hover:bg-rose-600 outline-none px-6 py-3 rounded-full font-semibold">
+                Say Yes
+            </button>
+        </section>
+        <div class="flex flex-col justify-center space-x-4 mt-10 bg-[#FEE3DA]">
+            <div class="flex flex-col justify-center space-x-4 mt-10 ">
+            <div class="flex flex-col items-center space-y-4">
+                <span id="favorite" class="material-symbols-outlined">
+                    favorite
+                </span>
+                <span id="download" class="material-symbols-outlined cursor-pointer hover:text-blue-500 transition-colors" onclick="downloadFile()">
+                    download
+                </span>
+                <p class="mt-12 text-[#ED124A]"> ©️2025 Love</p>
+            </div>  
+            <button class="mid-btn bg-[#ED124A] hover:bg-rose-600 outline-none px-6 py-3 rounded-full font-semibold mt-8" >
+                Say Yes
+            </button>
+        </div>
+       
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+

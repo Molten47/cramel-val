@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    overflow-x: hidden;
+}
+
+.custom-bg {
+    background-image: url('/images/983505_OH3EA00.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-content.show, .about-content.show, .reasons-content.show {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-top: 4rem;
+    z-index: 50;
+    background-color: #FEE3DA;
+    overflow-y: auto; /* For scrolling on longer content */
+}
+
+/* Style for the About Us and Reasons content */
+.about-content, .reasons-content {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+}
+
+.about-content h2, .reasons-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ED124A;
+    font-weight: 700;
+}
+
+.about-content p {
+    font-size: 1.25rem;
+    line-height: 1.75;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #ED124A;
+}
+
+/* Style for the reasons list */
+.reasons-content ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.reasons-content li {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+    color: #ED124A;
+    padding: 0.5rem;
+}
+
+/* Close button styles */
+.close-btn {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 51;
+}
+
+.close-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 640px) {
+    .custom-bg h2 {
+        font-size: 2.5rem;
+    }
+}
+.material-symbols-outlined{
+    font-size: 2.5rem;
+    color: #ED124A;
+}
+@keyframes heartBeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+#favorite {
+    transition: all 0.3s ease;
+}
+
+#favorite:hover {
+    transform: scale(1.1);
+}
+
+#favorite.active {
+    animation: heartBeat 0.3s ease-in-out;
+}
